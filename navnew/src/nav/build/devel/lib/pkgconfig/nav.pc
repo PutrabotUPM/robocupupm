@@ -1,0 +1,8 @@
+prefix=/home/neow/robocup/src/nav/build/devel
+
+Name: nav
+Description: Description of nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
