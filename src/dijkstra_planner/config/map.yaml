@@ -1,0 +1,22 @@
+nodes:
+  - id: A
+    neighbors:
+      - id: B
+        cost: 1.0
+      - id: C
+        cost: 2.5
+
+  - id: B
+    neighbors:
+      - id: C
+        cost: 1.0
+      - id: D
+        cost: 4.0
+
+  - id: C
+    neighbors:
+      - id: D
+        cost: 1.5
+
+  - id: D
+    neighbors: []

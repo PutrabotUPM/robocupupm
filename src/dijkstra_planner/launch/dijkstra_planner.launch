@@ -1,0 +1,16 @@
+<launch>
+  <!-- Load parameters from YAML -->
+  <rosparam file="$(find dijkstra_planner)/config/params.yaml" command="load" />
+
+  <!-- Start the Dijkstra Planner Node -->
+  <node
+    pkg="dijkstra_planner"
+    type="dijkstra_planner_node"
+    name="dijkstra_planner"
+    output="screen"
+  >
+    <!-- Optional: remap topics if needed -->
+    <!-- <remap from="/input_costmap" to="/custom_costmap_topic"/> -->
+  </node>
+</launch>
+
