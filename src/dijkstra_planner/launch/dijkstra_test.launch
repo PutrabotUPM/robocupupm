@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="dijkstra_planner" type="dijkstra_node" name="dijkstra_node" output="screen">
+    <param name="grid_width" value="20"/>
+    <param name="grid_height" value="20"/>
+  </node>
+</launch>
+

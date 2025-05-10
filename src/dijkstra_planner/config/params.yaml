@@ -1,0 +1,34 @@
+dijkstra_planner:
+  map_frame: "map"             # Frame in which the map is defined
+  robot_base_frame: "base_link"  # Robot's base frame
+
+  use_grid_map: true            # Whether to use a grid-based costmap
+  map_resolution: 0.05          # Resolution of each cell in meters
+  inflation_radius: 0.2         # Radius around obstacles to inflate costs
+  allow_unknown: false          # Allow planning through unknown cells
+  lethal_cost_threshold: 100    # Cost above which cells are considered obstacles
+
+  cost_map_topic: "/costmap"    # Topic to subscribe to for costmap data
+  planner_frequency: 1.0        # How often to run the planner (Hz)
+
+  start_tolerance: 0.1          # Acceptable range for start position error
+  goal_tolerance: 0.2           # Acceptable range for reaching the goal
+  plan_tolerance: 1.0           # If the path cannot reach goal but is within this distance, it’s acceptable
+
+  allow_diagonal_movement: false  # Whether diagonal movement is allowed (8-connected vs 4-connected grid)
+
+  publish_path_topic: "/dijkstra_path"  # Topic where planned path will be published
+  visualize_planner: true               # Enable marker-based visualization in RViz
+
+  max_iterations: 100000         # Safety cap for max search iterations
+  early_exit: true               # Exit early if goal is found
+  replan_on_failure: true        # Whether to replan if path becomes invalid
+
+  debug_mode: false              # Enable verbose logging for debugging
+
+  # Optional: Custom cost weights (if you use a weighted Dijkstra variant)
+  cost_weights:
+    traversal: 1.0
+    obstacle: 100.0
+    unknown: 50.0
+
