@@ -1,8 +1,0 @@
-build/
-devel/
-install/
-log/
-*.swp
-*.pyc
-*.bak
-*.log
