@@ -1,8 +1,0 @@
-prefix=/home/neow/navws/devel
-
-Name: dijkstra_planner
-Description: Description of dijkstra_planner
-Version: 0.0.1
-Cflags: -I/home/neow/navws/src/dijkstra_planner/include
-Libs: -L${prefix}/lib -ldijkstra_planner
-Requires: roscpp rospy std_msgs geometry_msgs nav_msgs

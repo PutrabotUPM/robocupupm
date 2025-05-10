@@ -1,2 +1,0 @@
-dijkstra_planner:nav
--DCATKIN_DEVEL_PREFIX=/home/neow/navws/devel -DCMAKE_INSTALL_PREFIX=/home/neow/navws/install -G Unix Makefiles
